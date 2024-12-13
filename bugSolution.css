@@ -1,0 +1,20 @@
+/* bugSolution.css */
+
+#container {
+  width: 500px; /* Ensure the container has a defined width */
+}
+
+#element {
+  width: calc(100% - 20px); /* Corrected calculation */
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/*More Robust Example, handling potential errors with min/max*/
+#responsive-element {
+  width: calc(min(100% - 20px, 400px)); /*Limits width to 400px max*/
+  background-color: lightgreen;
+  padding: 10px;
+  box-sizing: border-box; 
+}
